@@ -1,0 +1,34 @@
+//clrs
+$white: #FFFFFF;
+$red: #FF4343;
+$strong_red: #E71414;
+$strong_gray: #2D3033;
+$medium_gray: #6C7279;
+$ordinary_gray: #808080;
+$light_gray: #BABBC5;
+$gray: #C6CBCD;
+$black: #000000;
+$deep_blue: #2C3154;
+$dusty_blue: #656980;
+$blue: #353C65;
+$purple: #5C3249;
+$dusty_purple: #7E5D6F;
+$bgr_red: rgba(255, 67, 67, 0.8);
+$brg_dark_red: rgba(185, 12, 12, 0.8);
+$brg_blue: rgba(37, 43, 73, 0.8);
+$brg_blue_burger: rgba(37, 43, 73, 1);
+
+// border
+$nav_border_hover: 3px solid $light_gray;
+$nav_border_active: 3px solid $strong_red;
+$nav_border_transparent: 3px solid transparent;
+$social_icon_border: 1px solid $gray;
+
+// btns bhviour clrs
+$btn_color_normal: $red;
+$btn_color_hover: $strong_red;
+
+//social icons btns
+$facebook_color: #4267B2;
+$twitter_color: #1DA1F2;
+$linkedin_color: #0077b5;

@@ -1,0 +1,111 @@
+.swiper {
+    height: 535px;
+  
+    .swiper-button-next, .swiper-button-prev {
+      color: $brg_blue;
+  
+      @media (max-width: 768px) {        
+        display: none;      
+      }
+    }
+  
+    .swiper-pagination-bullet {
+      color: $dusty_purple;
+      width: 14px;
+      height: 14px;
+      border: 1px solid $dusty_purple;
+      background-color: $white;
+      margin-left: 20px;
+    }
+  
+    .swiper-pagination-bullet-active {
+      background: $dusty_purple;
+    }
+  
+    .testimonials-card {
+      display: flex;
+      align-items: center;
+      background-color: $purple;
+  
+      @media (max-width: 768px) {        
+        flex-direction: column;      
+      }
+  
+      .testimonials-card__img {
+        display: flex;
+        width: 100%;
+        height: 490px;
+  
+        @media (max-width: 768px) {        
+          height: 320px;      
+        }
+  
+        & img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+  
+          @media (max-width: 768px) {        
+            height: 90%;      
+          }
+        }
+      }
+  
+      .testimonials-feedback {
+        width: 100%;
+        display: grid;
+        text-align: left;
+        align-self: center;
+        justify-content: center;
+  
+        @media (max-width: 768px) {        
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: center;
+          height: 180px;
+        }
+  
+        .testimonials-feedback__text {
+          @include header_h2;
+          font-family: 'Cardo';
+          font-style: italic;
+          font-weight: 400;
+          text-transform: capitalize;
+          color: $white;
+          margin-bottom: 20px;
+          width: 471px;
+  
+          @media (max-width: 1024px) { 
+            @include header_h4;     
+            font-weight: 400; 
+            font-family: 'Cardo';
+            font-style: italic;
+            max-width: 330px;
+          }
+  
+          @media (max-width: 768px) {        
+            font-weight: 400;   
+            text-align: center; 
+          }
+        }
+  
+        .testimonials-feedback__author {
+          @include header_h6;
+          text-transform: uppercase;
+          color: $white;
+  
+          @media (max-width: 1024px) { 
+            @include header_h4;     
+            font-weight: 700;
+            font-size: 12px;  
+          }
+  
+          @media (max-width: 768px) {        
+            font-weight: 700;   
+            text-align: center;  
+          }
+        }
+      }
+    }
+  }

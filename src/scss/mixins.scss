@@ -1,0 +1,122 @@
+@mixin header_h1 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 900;
+    font-size: $_64px;
+    line-height: 1.171875;
+    text-transform: uppercase;
+  }
+  
+  @mixin header_h2 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: $_36px;
+    line-height: 1.166667;
+  }
+  
+  @mixin header_h3 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: $_30px;
+    line-height: 1.166667;
+  }
+  
+  @mixin header_h4 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 900;
+    font-size: $_24px;
+    line-height: 1.166667;
+  }
+  
+  @mixin header_h5 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: $_18px;
+    line-height: 1.166667;
+  }
+  
+  @mixin header_h6 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: $_13px;
+    line-height: 1.153846;
+  }
+  
+  @mixin button {
+    @include header_h4;
+    display: block;
+    border: $btn_color_normal;
+    width: 370px;
+    line-height: 80px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: auto;
+    background-color: $red;
+    color: $white;
+    transition: 0.9s;
+  
+    &:hover {
+      background-color: $btn_color_hover;
+      border: $btn_color_hover;
+      transition: 0.9s;
+    }
+  
+    &:active {
+      box-shadow: 4px 4px 30px $red;
+      transition: 0.9s;
+    }
+  }
+  
+  @mixin social_link {
+    font-size: $_18px;
+    border: $social_icon_border;
+    width: 2.4375rem;
+    line-height: 2.4375rem;
+    display: block;
+    text-align: center;
+    color: $gray;
+  }
+  
+  @mixin social_link_transform {
+    transform: scale(2);
+  
+    &:active {
+      transform: rotate(360deg);
+      transition: .8s;
+    }
+  }
+  
+  @mixin button_media_tablet {
+    @include header_h5;
+    display: block;
+    border: $btn_color_normal;
+    width: 314px;
+    line-height: 80px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: auto;
+    background-color: $red;
+    color: $white;
+    transition: 0.9s;
+    font-weight: 900;
+  }
+  
+  @mixin button_media_mobile {
+    @include header_h5;
+    display: block;
+    border: $btn_color_normal;
+    width: 280px;
+    line-height: 80px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: auto;
+    background-color: $red;
+    color: $white;
+    transition: 0.9s;
+    font-weight: 900;
+  }

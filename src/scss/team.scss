@@ -1,0 +1,116 @@
+.team {
+    padding: 114px 0 70px;
+  
+    @media (max-width: 1024px) { 
+      padding: 50px 0 20px 0;
+    }
+  
+    .team-wrap {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin: 0 -15px;
+  
+      @media (max-width: 1024px) { 
+        display: flex;
+        flex-wrap: wrap;    
+        align-items: flex-start;
+        justify-content: space-evenly;
+      }
+  
+      .team-card {
+        width: 260px;
+        margin: 0 15px;
+        margin-bottom: 40px;
+  
+        @media (max-width: 1024px) { 
+          margin-bottom: 50px;
+  
+          .team-card:last-child {
+            margin-bottom: 0;
+          }
+        }
+  
+        .team-card__img {
+          margin-bottom: 30px;
+          height: 260px;
+          width: 260px;
+  
+          & img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+          }
+        }
+  
+        .team-card__name {
+          @include header_h4;
+          text-transform: capitalize;
+          margin-bottom: 5px;
+  
+          @media (max-width: 1024px) { 
+            @include header_h5;  
+            font-weight: 700;
+          }
+        }
+  
+        .team-card__position {
+          @include header_h5;
+          text-transform: uppercase;
+          color: $red;
+          display: inline-block;
+          margin-bottom: 18px;
+  
+          @media (max-width: 1024px) { 
+            font-size: 14px;
+          }
+        }
+  
+        .team-card__text {
+          margin-bottom: 37px;
+  
+          & p {
+            @include header_h5;
+            color: $medium_gray;
+          }
+  
+          @media (max-width: 1024px) {  
+            margin-bottom: 10px;
+          }
+        }
+  
+        .team-card__icons-list {
+          display: flex;
+          align-items: center;
+  
+          .team-card__icons-item {
+            margin-right: 5px;
+  
+            &:last-child {
+              margin-right: 0;
+            }
+  
+            .team-card__icons-link {
+              @include social_link;
+  
+              .fa-facebook-f:hover {
+                @include social_link_transform;
+                color: $facebook_color;
+              }
+  
+              .fa-twitter:hover {
+                @include social_link_transform;
+                color: $twitter_color;
+              }
+  
+              .fa-linkedin:hover {
+                @include social_link_transform;
+                color: $linkedin_color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
