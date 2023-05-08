@@ -8,18 +8,18 @@
   position: relative;
 }
   
-@import "../scss/cdn";
-@import "../scss/varFontSize";
-@import "../scss/var";
-@import "../scss/mixins.";
-@import "../scss/banner";
-@import "../scss/footer";
-@import "../scss/contacts";
-@import "../scss/download";
-@import "../scss/tesimonials";
-@import "../scss/features";
-@import "../scss/team";
-@import "../scss/work";
+@import "./cdn.scss";
+@import "./varFontSize";
+@import "./var";
+@import "./mixins";
+@import "./banner";
+@import "./footer";
+@import "./contacts";
+@import "./download";
+@import "./tesimonials";
+@import "./features";
+@import "./team";
+@import "./work";
 
   
   html {
