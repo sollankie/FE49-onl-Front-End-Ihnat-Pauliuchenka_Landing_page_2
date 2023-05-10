@@ -125,6 +125,7 @@
                 text-transform: uppercase;
                 padding-bottom: 40px;
                 display: block;
+            
   
                 &:active {
                   color: $strong_red;
@@ -230,11 +231,13 @@
   
     .nav-list {
       flex-direction: column;
+      
   
       .nav-list__item-link {
         padding: 40px 0;
         text-align: left;  
         font-size: 23px;
+        
       }
     }
   

@@ -98,16 +98,19 @@
             .fa-facebook-f:hover {
               @include social_link_transform;
               color: $facebook_color;
+              transition: 0.1s;
             }
   
             .fa-twitter:hover {
               @include social_link_transform;
               color: $twitter_color;
+              transition: 0.1s;
             }
   
             .fa-linkedin:hover {
               @include social_link_transform;
               color: $linkedin_color;
+              transition: 0.1s;
             }
           }
         }
